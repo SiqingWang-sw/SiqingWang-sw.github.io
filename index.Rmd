@@ -1,0 +1,39 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jeff's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+add text
+
+* and lists
+* with extra bullets
+You can *FORMAT* and **Bold**
+
+This is a [link](https://p8105.com/index.html) to course website  
+
+Here's a link to the [about](about.html) page
+
+You can still use R
+
+```{r}
+library(tidyverse)
+
+plot_df =
+  tibble(
+    x = runif(100),
+    y = 1 + 2*x + rnorm(100)
+  )
+
+plot_df |> 
+  ggplot(aes(x = x, y = y)) + geom_point()
+```
+
+
+
